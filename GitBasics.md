@@ -1,5 +1,6 @@
-# Git basics - Notes
+###### tags: `GIT`
 
+# Git basics - Notes
 
 [ToC]
 
@@ -247,6 +248,26 @@ This command will create a copy of the repository to new directory for modificat
     git push origin master
 ```
 :::
+
+## :point_right: Flow diagrams
+```sequence
+Note left of Local Folder: LOCAL SYSTEM
+
+Local Folder --> Stagging Repo : "git Add"
+Local Folder --> Local Repo : "git commit "
+Git Repo -> Local Repo: "PULL"
+Local Repo -> Git Repo: "PUSH"  
+Note right of Git Repo: Github 
+```
+
+
+## Reveiw 
+
+- [ ] Review 1
+- [ ] Review 2
+- [ ] Review 3
+- [ ] Review 4
+- [ ] Review 5
 
 ## Disclaimer :thumbsup: 
 :::info
