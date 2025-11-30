@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Editing - Semester 2 Planning</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    
+    <style>
+        body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+            background-color: #f6f8fa;
+        }
+        .markdown-body {
+            background-color: white;
+            padding: 45px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        }
+        @media (max-width: 767px) {
+            body { padding: 15px; }
+            .markdown-body { padding: 15px; }
+        }
+    </style>
 </head>
-
 <body>
-    <div>
-        <ul>
-            <li><a href="https://hackmd.io/@raptors/B1e5SCUYO">English Learnings</a></li>
-            <li><a href="https://hackmd.io/@raptors/SJZEoIfid">Git basics</a></li>
-            <li><a href="https://hackmd.io/@raptors/ry3hygjou">Great verbs for meeting</a></li>
-        </ul>
-    </div>
-</body>
+    <div class="markdown-body" id="content">Loading...</div>
 
+    <script>
+        fetch('DigitialEditing_semester2_planning.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = 
+                    '<h1>Error</h1><p>Could not load markdown file.</p>';
+            });
+    </script>
+</body>
 </html>
