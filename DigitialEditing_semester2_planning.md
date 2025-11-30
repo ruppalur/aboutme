@@ -13,13 +13,8 @@ _Tools used: DaVinci Resolve - Version 20 🛠️_
 
 ## Final Video
 
-<iframe src="https://onedrive.live.com/embed?resid=EC652E6EC3837C41%21123&authkey=%21AE5_HJPyl5n9AfSfT4ycQPC0lJxj73Agcc0&em=2" 
-        width="800" 
-        height="450" 
-        frameborder="0" 
-        scrolling="no" 
-        allowfullscreen>
-</iframe>
+<iframe src="https://1drv.ms/v/c/EC652E6EC3837C41/IQRjwucVavWVSJr_HJPyl5n9AQv0XfVAhNynok8fdqj97OY?width=1920&height=1080" 
+        width="800" height="450" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 ---
 
